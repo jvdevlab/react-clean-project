@@ -1,0 +1,16 @@
+version: "3"
+
+services:
+  # docker compose up frontend
+  # http://localhost:3000
+  app:
+    build: ./frontend
+    tty: true
+    stdin_open: true
+    ports:
+      - 3000:3000
+    env_file:
+      - .env
+    volumes:
+      - ${pwd:-.}/frontend/public:/app/public:ro
+      - ${pwd:-.}/frontend/src:/app/src:ro
