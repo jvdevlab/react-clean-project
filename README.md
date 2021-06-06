@@ -1,3 +1,3 @@
-# React Clean Project
+## Description
 
-This is a template for React based demo projects.
+This is a template for React-based demo projects.
